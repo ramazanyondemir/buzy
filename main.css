@@ -31,6 +31,7 @@ body {
     border: 1px solid red;
     width: 500px;
 }
+<<<<<<< HEAD
 .input-container{
     width: 350px;
     margin: 20px;
@@ -47,3 +48,5 @@ body {
 .search-btn{
     width: 40px;
 }
+=======
+>>>>>>> e834a07883069388458003628fe7740670a1f451
