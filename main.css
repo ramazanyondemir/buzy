@@ -31,3 +31,19 @@ body {
     border: 1px solid red;
     width: 500px;
 }
+.input-container{
+    width: 350px;
+    margin: 20px;
+    
+    
+}
+.input-container input{
+    width: 100%;
+}
+.search-container{
+    border:1px solid red;
+    width: 400px;
+}
+.search-btn{
+    width: 40px;
+}
