@@ -31,22 +31,20 @@ body {
     border: 1px solid red;
     width: 500px;
 }
-<<<<<<< HEAD
 .input-container{
     width: 350px;
     margin: 20px;
-    
-    
 }
-.input-container input{
+.search-container input{
     width: 100%;
 }
 .search-container{
     border:1px solid red;
-    width: 400px;
+    display: flex;
+    margin: 10px 0px;
+    
 }
 .search-btn{
     width: 40px;
+    margin-left: 10px;
 }
-=======
->>>>>>> e834a07883069388458003628fe7740670a1f451
