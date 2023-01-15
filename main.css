@@ -1,0 +1,33 @@
+/* değişken tanımladık */
+:root {
+    --main-color: #673de6;
+    --secondary-main-color: #f1f3fe;
+}
+
+/* varsayılan iç ve dış boşlukları kaldırdık */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height:100%;
+}
+body {
+    background-color: var(--secondary-main-color);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding:20px;
+    flex-direction: column;
+    border:1px solid red;
+}
+.ahmetkaya {
+    border: 1px solid red;
+    width: 500px;
+}
