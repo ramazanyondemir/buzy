@@ -54,23 +54,25 @@ body {
     
 }
 .icon{
-    display:flex;
+   display:flex;
    flex-direction: column;
    justify-content: center;
+   
 }
 .navbar .icon li{
     margin: 20px 0px;
     list-style:none;
     flex: 2;
     
+    
 }
 .navbar .icon li img{
     width: 80px;
-    height: 80px;
-     
+    height: 80px;    
    
 }
 .line{
     display: flex;
+    text-align: center;
     
 }
