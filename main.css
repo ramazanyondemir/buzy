@@ -49,16 +49,28 @@ body {
     margin-left: 10px;
 }
 .navbar{
-    width: 500px;
+    width: 800px;
+    border: 1px solid red;
+    
+}
+.icon{
+    display:flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .navbar .icon li{
-    width: calc(100% / 3 - 20px);
+    margin: 20px 0px;
     list-style:none;
-    display:inline-block;
-    margin:0 auto;  
+    flex: 2;
+    
 }
 .navbar .icon li img{
     width: 80px;
     height: 80px;
+     
    
+}
+.line{
+    display: flex;
+    
 }
