@@ -48,3 +48,17 @@ body {
     width: 40px;
     margin-left: 10px;
 }
+.navbar{
+    width: 500px;
+}
+.navbar .icon li{
+    width: calc(100% / 3 - 20px);
+    list-style:none;
+    display:inline-block;
+    margin:0 auto;  
+}
+.navbar .icon li img{
+    width: 80px;
+    height: 80px;
+   
+}
