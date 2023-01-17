@@ -35,9 +35,27 @@ body {
     border:1px solid red;
 }
 .ahmetkaya {
-    border: 1px solid red;
-    width: 500px;
+    border: 1px solid ;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
+
+.gradyan {
+    /*background: rgb(103,61,230);
+    background: linear-gradient(225deg, rgba(103,61,230,1) 0%, rgba(140,111,227,1) 50%, rgba(103,61,230,1) 82%);
+   */
+    background: rgb(233,182,155);
+    background: linear-gradient(143deg, rgba(233,182,155,1) 4%, rgba(236,153,109,1) 40%, rgba(231,133,81,1) 82%);
+    color: var(--secondary-main-color);
+    width: 700px;
+    border-radius: 5px;
+}
+  
+  
 .input-container{
     width: 350px;
     margin: 20px;
