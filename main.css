@@ -10,6 +10,8 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+
 }
 
 html,body {
@@ -51,10 +53,11 @@ body {
     background: rgb(233,182,155);
     background: linear-gradient(143deg, rgba(233,182,155,1) 4%, rgba(236,153,109,1) 40%, rgba(231,133,81,1) 82%);
     color: var(--secondary-main-color);
-    width: 700px;
+    width: 750px;
     border-radius: 5px;
+    padding: 10px 50px;
 }
-  
+
   
 .input-container{
     width: 350px;
@@ -108,5 +111,18 @@ body {
 
 .line li a h5{
     margin-top:8px
+}
+/*son elemanda boşluk var*/
+.diziresimler{
+    display: flex;
+    justify-content: center;
+}
+.diziresimler img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin-right: 10px;
+    
+    
 }
 
