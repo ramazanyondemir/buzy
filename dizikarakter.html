@@ -11,15 +11,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="index.html">BACK</a>
     <div>dizikarakter</div>
     <div class="ahmetkaya gradyan"> 
         <h1>BAŞLIK</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quia est aliquam exercitationem at harum, enim beatae dolore excepturi. Itaque iste ad veniam perferendis enim necessitatibus asperiores est earum commodi.</p>
     </div>
     <div class="diziresimler">
-        <img src="media/kismet.jpg">
+        <img id="img" src="media/kismet.jpg">
         <img src="media/askimemnu.webp">
         <img src="media/harry.jpg">
     </div>
+
+    <div id="test" class="test"></div>
+
+    <script>
+        const div = document.getElementById("test");
+        const img = document.getElementById("img");
+        const data = [
+            {
+                id: 1,
+                soru: "atlar uçar mı?",
+            },
+            {
+                id: 2,
+                soru: "atlar uçar mıqweqe?",
+            },
+        ];
+
+        img.addEventListener('click', () => {
+            div.classList.add("testOpen");
+            data.forEach((element) => {div.innerHTML = "<h1>"+element.soru+"</h1>"});
+            const newDiv = document.createElement("div");
+            newDiv.innerHTML = "cevapppppp";
+            div.appendChild(newDiv);
+        })
+        
+    </script>
 </body>
 </html>

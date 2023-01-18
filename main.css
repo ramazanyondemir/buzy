@@ -1,6 +1,7 @@
 /* değişken tanımladık */
 :root {
     --main-color: #673de6;
+    --main-color-o70: #7e5ce4;
     --secondary-main-color: #f1f3fe;
 }
 
@@ -9,9 +10,9 @@
 * {
     margin:0;
     padding:0;
+    outline:none;
     box-sizing: border-box;
     font-family:'Poppins', sans-serif;
-
 }
 
 html,body {
@@ -34,16 +35,13 @@ body {
     align-items: center;
     padding:20px;
     flex-direction: column;
-    border:1px solid red;
 }
 .ahmetkaya {
-    border: 1px solid ;
     width: 400px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    
 }
 
 .gradyan {
@@ -59,29 +57,34 @@ body {
 }
 
   
-.input-container{
-    width: 350px;
+.search-container{
+    width: 500px;
     margin: 20px;
 }
 .search-container input{
     width: 100%;
+    border: 1px solid #777;
+    padding: 8px;
+    border-radius:3px;
 }
 .search-container{
-    border:1px solid red;
     display: flex;
     margin: 10px 0px;
-    
 }
 .search-btn{
-    width: 40px;
+    border:none;
+    background-color: var(--main-color-o70);
+    color: #fff;
+    cursor: pointer;
+    border-radius:3px;
+    padding:14px;
     margin-left: 10px;
+}
+.search-btn:hover {
+    background-color: var(--main-color);
 }
 .navbar{
     width: 800px;
-    border: 1px solid red;
-   
-   
-    
 }
 .icon{
    display:flex;
@@ -93,9 +96,10 @@ body {
 .navbar .icon li{
     margin: 20px 0px;
     list-style:none;
-    flex: 2;
-    
-    
+    flex: 1;
+}
+.navbar .icon li:hover {
+
 }
 .navbar .icon li img{
     width: 80px;
@@ -122,7 +126,13 @@ body {
     height: 250px;
     object-fit: contain;
     margin-right: 10px;
-    
-    
 }
-
+.testOpen {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 90vw;
+    height: 90vh;
+    background-color:aquamarine;
+}
