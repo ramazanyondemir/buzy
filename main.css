@@ -127,12 +127,65 @@ body {
     object-fit: contain;
     margin-right: 10px;
 }
-.testOpen {
+.d-none {
+    display: none;
+}
+.d-block {
+    display: block;
+}
+/* question */
+.question-container {
     position: absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
     width: 90vw;
     height: 90vh;
+    padding: 20px;
     background-color:aquamarine;
+}
+/* .question-container input {
+    visibility: hidden;
+} */
+.question-container ul {
+    list-style: none;
+}
+.question-container ul li {
+    color: #fff;
+    font-size: 1.5rem;
+    border: 2px solid var(--main-color-o70);
+    display: flex;
+    padding: 0 8px;
+    margin-bottom: 10px;
+}
+.question-container ul li label {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor:pointer;
+}
+.question-container ul li:hover {
+    cursor: pointer;
+    background-color: var(--main-color-o70);
+    transition: ease-out 300ms;
+}
+
+.question {
+    padding:5px 10px;
+    color:#673de6;
+    font-size: 2rem;
+    text-align: center;
+}
+.next-btn-container {
+    margin-top: 10px;
+    text-align: center;
+}
+#submit {
+    font-size: 1.3rem;
+    width: 50%;
+    cursor: pointer;
+}
+#submit:hover {
+    color:#fff;
+    background-color: var(--main-color-o70);
 }
