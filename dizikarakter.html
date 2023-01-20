@@ -44,13 +44,16 @@
         <div class="next-btn-container">
             <button id="submit">Geç</button>
         </div>
+        
+        
+       
     </div>
 <script>
 const data = [
 
         {
             id: 1,
-            soru: "en sevdiğin müzisyen?",
+            soru: "En Sevdiğin Müzisyen?",
             cevaplar: {
                     a: "Hakkı Bulut",
                     b: "Lana Del Rey",
@@ -77,6 +80,7 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitButton = document.getElementById("submit");
+const submitButton2 = document.getElementById("submit2");
 
 let nextQuestion = 0;
 img.addEventListener('click', () => {
@@ -100,6 +104,7 @@ submitButton.addEventListener('click', () => {
     loadTest(nextQuestion + 1);
     loadAnswer(nextQuestion + 1);
 })
+
 
 </script>
 </body>
