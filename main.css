@@ -189,7 +189,9 @@ body {
     padding: 8px;
     cursor: pointer;
     border-radius:15px;
-    margin-right: 0 auto;
+    position: relative;
+    right: -20px;
+
 }
 #submit:hover {
     color:#fff;
