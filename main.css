@@ -157,12 +157,14 @@ body {
     display: flex;
     padding: 0 8px;
     margin-bottom: 10px;
+    border-radius:15px;
 }
 .question-container ul li label {
     display: block;
     width: 100%;
     padding: 8px;
     cursor:pointer;
+    
 }
 .question-container ul li:hover {
     cursor: pointer;
@@ -175,6 +177,7 @@ body {
     color:#673de6;
     font-size: 2rem;
     text-align: center;
+    
 }
 .next-btn-container {
     margin-top: 10px;
@@ -182,8 +185,11 @@ body {
 }
 #submit {
     font-size: 1.3rem;
-    width: 50%;
+    width: 10%;
+    padding: 8px;
     cursor: pointer;
+    border-radius:15px;
+    margin-right: 0 auto;
 }
 #submit:hover {
     color:#fff;
