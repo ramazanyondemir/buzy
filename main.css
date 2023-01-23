@@ -136,16 +136,24 @@ body {
 /* question */
 .question-container {
     position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 90vw;
     height: 90vh;
     padding: 20px;
     background-color:white;
+    margin: 0 auto;
+
+}
+ #close_btn{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: rgba(255,223,108,255);
 }
 /* .question-container input {
-    visibility: hidden;
+    visibility: 2hidden;
 } */
 .question-container ul {
     list-style: none;
@@ -159,7 +167,6 @@ body {
     border: 2px solid rgba(243,139,42,255);
     background-color: rgba(255,223,108,255);
     display: flex;
-    padding: 0 8px;
     margin-bottom: 10px;
     border-radius:15px;
     width: 70%;
@@ -168,6 +175,8 @@ body {
     display: block;
     width: 100%;
     padding: 8px;
+    border-radius:15px;
+
    
 }
 
@@ -175,6 +184,11 @@ body {
     cursor: pointer;
     background-color:  rgba(243,139,42,255);
     transition: ease-out 300ms;
+}
+input:checked + label{
+    background-color:  rgba(243,139,42,255);
+    width: 100%;
+    
 }
 
 
@@ -210,4 +224,8 @@ body {
     color:#fff;
     background-color: rgba(243,139,42,255);
     
+}
+.answer{
+    visibility: hidden;
+    position: absolute;
 }

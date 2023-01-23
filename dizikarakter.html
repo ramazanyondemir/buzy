@@ -25,11 +25,11 @@
         <h2 id="question" class="question">Soru yükleniyor...</h2>
         <ul>  
             <li>  
-                <input type="radio" name="answer" id="a" class="answer" />  
+                <input type="radio" name="answer" id="a" class="answer"  />  
                 <label for="a" id="a_text">Cevap...</label>  
             </li>  
             <li>  
-                <input type="radio" name="answer" id="b" class="answer" />  
+                <input type="radio" name="answer" id="b" class="answer"  />  
                 <label for="b" id="b_text">Cevap...</label>  
             </li>  
             <li>  
@@ -44,7 +44,7 @@
         <div class="next-btn-container">
             <button id="submit">Geç</button>
         </div>
-        
+        <button id="close_btn">X</button>
         
        
     </div>
@@ -71,6 +71,46 @@ const data = [
                     d: "cevap d",
             }
         },
+        {
+            id: 3,
+            soru: "En Sevdiğin 45Müzisyen?",
+            cevaplar: {
+                    a: "Hakkı Bulut",
+                    b: "Lana Del Rey",
+                    c: "Mabel Matiz",
+                    d: "Linkin Park",
+            }
+        },
+        {
+            id: 4,
+            soru: "En Sevdiğin45 Müzisyen?",
+            cevaplar: {
+                    a: "Hakkı Bulut",
+                    b: "Lana Del Rey",
+                    c: "Mabel Matiz",
+                    d: "Linkin Park",
+            }
+        },
+        {
+            id: 5,
+            soru: "En Sevdiğin Müzisye45n?",
+            cevaplar: {
+                    a: "Hakkı Bulut",
+                    b: "Lana Del Rey",
+                    c: "Mabel Matiz",
+                    d: "Linkin Park",
+            }
+        },
+        {
+            id: 6,
+            soru: "En Sevdiğin Müzisyen4545545?",
+            cevaplar: {
+                    a: "Hakkı Bulut",
+                    b: "Lana Del Rey",
+                    c: "Mabel Matiz",
+                    d: "Linkin Park",
+            }
+        },
     ];
 const div = document.getElementById("question-container");
 const img = document.getElementById("img");
@@ -79,8 +119,8 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
+const closeButton = document.getElementById("close_btn");
 const submitButton = document.getElementById("submit");
-const submitButton2 = document.getElementById("submit2");
 
 let nextQuestion = 0;
 img.addEventListener('click', () => {
@@ -103,7 +143,17 @@ function loadAnswer(next) {
 submitButton.addEventListener('click', () => {
     loadTest(nextQuestion + 1);
     loadAnswer(nextQuestion + 1);
+
+    /*herbir elemanın (inputun içindeki class adı .answer) tek tek seçili özelliğini(checked=false) kaldırdık*/
+  let deneme= document.querySelectorAll(".answer");
+  deneme.forEach(element => element.checked= false);
 })
+/*button kapatma */
+  closeButton.addEventListener('click', () => {
+    div.classList.add('d-none');
+  })
+
+
 
 
 </script>
