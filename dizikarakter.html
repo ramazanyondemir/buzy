@@ -75,10 +75,10 @@ const data = [
             id: 3,
             soru: "En Sevdiğin 45Müzisyen?",
             cevaplar: {
-                    a: "Hakkı Bulut",
-                    b: "Lana Del Rey",
-                    c: "Mabel Matiz",
-                    d: "Linkin Park",
+                    a: "Sezen Aksu",
+                    b: "İbrahim Tatlıses",
+                    c: "Ahmet Kaya",
+                    d: "Ferdi Tayfur",
             }
         },
         {
@@ -143,6 +143,7 @@ function loadAnswer(next) {
 submitButton.addEventListener('click', () => {
     loadTest(nextQuestion + 1);
     loadAnswer(nextQuestion + 1);
+    nextQuestion++
 
     /*herbir elemanın (inputun içindeki class adı .answer) tek tek seçili özelliğini(checked=false) kaldırdık*/
   let deneme= document.querySelectorAll(".answer");
