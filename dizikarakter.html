@@ -141,9 +141,21 @@ function loadAnswer(next) {
 }
 
 submitButton.addEventListener('click', () => {
-    loadTest(nextQuestion + 1);
-    loadAnswer(nextQuestion + 1);
-    nextQuestion++
+    if(nextQuestion +1 < data.length){
+        loadTest(nextQuestion + 1);
+        loadAnswer(nextQuestion + 1);
+        nextQuestion++;
+
+    }else{
+        const finishImg= document.createElement("img");
+        const finish= document.createElement("h1");
+        finish.innerHTML="bitti";
+        finishImg.src="media/kismet.jpg";
+        div.innerHTML="";
+        div.appendChild(finish);
+        div.appendChild(finishImg);
+
+    }
 
     /*herbir elemanın (inputun içindeki class adı .answer) tek tek seçili özelliğini(checked=false) kaldırdık*/
   let deneme= document.querySelectorAll(".answer");
