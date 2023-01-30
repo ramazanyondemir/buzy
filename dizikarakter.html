@@ -20,7 +20,7 @@
         <img src="media/askimemnu.webp">
         <img src="media/harry.jpg">
     </div>
-
+<div class="background-filter d-none"></div>
     <div id="question-container" class="question-container d-none">
         <h2 id="question" class="question">Soru yükleniyor...</h2>
         <ul>  
@@ -48,6 +48,7 @@
     </div>
 <script>
 const data = [
+
 
         {
             id: 1,
@@ -110,7 +111,21 @@ const data = [
             }
         },
     ];
-const div = document.getElementById("question-container");
+
+const result = [
+    {isim: "Yeliz"},
+    {isim: "Yaren"},
+    {isim: "Aybüke"},
+    {isim: "Ayşenur"},
+    {isim: "Şeydanur"},
+    {isim: "Cansel"},
+    {isim: "Tuğçe"},
+    {isim: "Elif"},
+    {isim: "Simge"}
+
+]
+const container = document.getElementById("question-container");
+const background = document.querySelector(".background-filter");
 const img = document.getElementById("img");
 const questionElement = document.getElementById("question");
 const a_text = document.getElementById("a_text");
@@ -122,8 +137,13 @@ const submitButton = document.getElementById("submit");
 
 let nextQuestion = 0;
 img.addEventListener('click', () => {
-    div.classList.remove('d-none');
+    container.classList.remove('d-none');
+    background.classList.remove('d-none');
     loadTest(0);
+})
+background.addEventListener("click" , () => {
+    container.classList.add("d-none");
+    background.classList.add('d-none');
 })
 
 function loadTest(next) {
@@ -147,12 +167,18 @@ submitButton.addEventListener('click', () => {
     }else{
         const finishImg = document.createElement("img");
         const finish = document.createElement("h1");
-        finish.innerHTML = "bitti";
+        const finishtest = document.createElement("h2");
+        const finishContainer = document.createElement("div");
+        finishContainer.classList.add("finish-container");
+        finishContainer.appendChild(finishImg);
+        finishContainer.appendChild(finish);
+        finishContainer.appendChild(finishtest);
+        finish.innerHTML = result[Math.floor(Math.random() * result.length + 1)].isim;
+        finishtest.classList.add("finish-test");
+        finishtest.innerHTML = "hellö";
         finishImg.src = "media/kismet.jpg";
-        div.innerHTML = "";
-        createCloseBtn();
-        div.appendChild(finish);
-        div.appendChild(finishImg);
+        container.innerHTML = "";
+        container.appendChild(finishContainer);
     }
     /* herbir elemanın (inputun içindeki class adı .answer)
     tek tek seçili özelliğini(checked=false) kaldırdık */
@@ -160,15 +186,10 @@ submitButton.addEventListener('click', () => {
     deneme.forEach(element => element.checked= false);
 })
 
-    function createCloseBtn() {
-        const closeBtn = document.createElement("button");
-        closeBtn.classList.add("close_btn");
-        closeBtn.innerHTML = "X";
-        div.appendChild(closeBtn);
-    }
-    
     closeButton.addEventListener('click', () => {
-        div.classList.add('d-none');
+        container.classList.add('d-none');
+        background.classList.add('d-none');
+
     })
 
 

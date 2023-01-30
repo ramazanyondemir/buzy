@@ -140,12 +140,20 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
-    height: 90vh;
+    width: 80vw;
+    height: 80vh;
     padding: 20px;
     background-color:white;
     margin: 0 auto;
-
+}
+.background-filter{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: black;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
 }
 .close_btn{
     position: absolute;
@@ -181,9 +189,7 @@ body {
     width: 100%;
     padding: 8px;
     border-radius:15px;
-    cursor: pointer;
-
-   
+    cursor: pointer;  
 }
 
 .question-container ul li:hover {
@@ -236,4 +242,13 @@ input:checked + label{
     visibility: hidden;
     position: absolute;
 }
-
+.finish-container{
+    text-align: center;
+}
+.finish-container img{
+    height: 200px;
+    
+}
+.finish-test{
+    font-weight: 200;
+}
