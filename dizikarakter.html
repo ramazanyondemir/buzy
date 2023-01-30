@@ -44,9 +44,7 @@
         <div class="next-btn-container">
             <button id="submit">Geç</button>
         </div>
-        <button id="close_btn">X</button>
-        
-       
+        <button class="close_btn">X</button>
     </div>
 <script>
 const data = [
@@ -119,7 +117,7 @@ const a_text = document.getElementById("a_text");
 const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
-const closeButton = document.getElementById("close_btn");
+const closeButton = document.querySelector(".close_btn");
 const submitButton = document.getElementById("submit");
 
 let nextQuestion = 0;
@@ -147,26 +145,31 @@ submitButton.addEventListener('click', () => {
         nextQuestion++;
 
     }else{
-        const finishImg= document.createElement("img");
-        const finish= document.createElement("h1");
-        finish.innerHTML="bitti";
-        finishImg.src="media/kismet.jpg";
-        div.innerHTML="";
+        const finishImg = document.createElement("img");
+        const finish = document.createElement("h1");
+        finish.innerHTML = "bitti";
+        finishImg.src = "media/kismet.jpg";
+        div.innerHTML = "";
+        createCloseBtn();
         div.appendChild(finish);
         div.appendChild(finishImg);
-
     }
-
-    /*herbir elemanın (inputun içindeki class adı .answer) tek tek seçili özelliğini(checked=false) kaldırdık*/
-  let deneme= document.querySelectorAll(".answer");
-  deneme.forEach(element => element.checked= false);
+    /* herbir elemanın (inputun içindeki class adı .answer)
+    tek tek seçili özelliğini(checked=false) kaldırdık */
+    let deneme= document.querySelectorAll(".answer");
+    deneme.forEach(element => element.checked= false);
 })
-/*button kapatma */
-  closeButton.addEventListener('click', () => {
-    div.classList.add('d-none');
-  })
 
-
+    function createCloseBtn() {
+        const closeBtn = document.createElement("button");
+        closeBtn.classList.add("close_btn");
+        closeBtn.innerHTML = "X";
+        div.appendChild(closeBtn);
+    }
+    
+    closeButton.addEventListener('click', () => {
+        div.classList.add('d-none');
+    })
 
 
 </script>
