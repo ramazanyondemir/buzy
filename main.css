@@ -144,6 +144,8 @@ body {
     height: 80vh;
     padding: 20px;
     background-color:white;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 0 auto;
 }
 .background-filter{
@@ -159,11 +161,15 @@ body {
     position: absolute;
     top: 30px;
     right: 30px;
-    background-color: rgba(243,139,42,255);
     padding: 8px 12px;
     font-size: 20px;
-    border: 2px solid rgba(243,139,42,255);
     cursor: pointer;
+    color: rgba(255, 0, 0, 0.635);
+    background-color: transparent;
+    border:none;
+}
+.close_btn:hover {
+    text-shadow: 0 0 2px red;
 }
 /* .question-container input {
     visibility: 2hidden;
@@ -219,7 +225,7 @@ input:checked + label{
     text-align: center;
     
 }
-#submit {
+.submit {
     font-size: 1.3rem;
     color: white;
     width: 10%;
@@ -233,7 +239,7 @@ input:checked + label{
     margin: 10px;
 
 }
-#submit:hover {
+.submit:hover {
     color:#fff;
     background-color: rgba(243,139,42,255);
     

@@ -44,7 +44,7 @@
         </ul>
        
         <div class="next-btn-container">
-            <button id="submit">Geç</button>
+            <button class="submit">Geç</button>
         </div>
         <button class="close_btn">X</button>
     </div>
@@ -135,7 +135,8 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const closeButton = document.querySelector(".close_btn");
-const submitButton = document.getElementById("submit");
+const finishBtn = document.createElement("button");
+const submitButton = document.querySelector(".submit");
 
 let nextQuestion = 0;
 img.addEventListener('click', () => {
@@ -143,10 +144,10 @@ img.addEventListener('click', () => {
     background.classList.remove('d-none');
     loadTest(0);
 })
-background.addEventListener("click" , () => {
-    container.classList.add("d-none");
-    background.classList.add('d-none');
-})
+// background.addEventListener("click" , () => {
+//     container.classList.add("d-none");
+//     background.classList.add('d-none');
+// })
 
 function loadTest(next) {
     questionElement.innerHTML = data[next].soru;
@@ -171,16 +172,20 @@ submitButton.addEventListener('click', () => {
         const finish = document.createElement("h1");
         const finishtest = document.createElement("h2");
         const finishContainer = document.createElement("div");
+        // bir button ekliyorum sona gelindiğinde sayfayı yenilemek için
+        container.innerHTML="";
+        finishBtn.innerHTML = "Bitir";
+        finishBtn.classList.add("submit");
         finishContainer.classList.add("finish-container");
         finishContainer.appendChild(finishImg);
         finishContainer.appendChild(finish);
         finishContainer.appendChild(finishtest);
+        finishContainer.appendChild(finishBtn);
         let random = Math.floor(Math.random() * result.length + 1);
         finish.innerHTML = result[random].isim;
         finishtest.classList.add("finish-test");
         finishtest.innerHTML = "hellö";
         finishImg.src = result[random].resim;
-        container.innerHTML="";
         container.appendChild(finishContainer);
     }
     /* herbir elemanın (inputun içindeki class adı .answer)
@@ -192,8 +197,12 @@ submitButton.addEventListener('click', () => {
     closeButton.addEventListener('click', () => {
         container.classList.add('d-none');
         background.classList.add('d-none');
+        nextQuestion = 0;
     })
 
+    finishBtn.addEventListener('click', () => {
+        location.reload();
+    })
 
 </script>
 </body>
