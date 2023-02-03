@@ -118,12 +118,13 @@ body {
 }
 /*son elemanda boşluk var*/
 .diziresimler{
+    margin: 20px 0;
     display: flex;
     justify-content: center;
 }
 .diziresimler img{
     width: 250px;
-    height: 250px;
+    height: auto;
     object-fit: contain;
     margin-right: 10px;
     cursor: pointer;

@@ -1,4 +1,4 @@
-const result = [
+const kismetseolurimg = [
     {isim: "Yeliz", resim:"media/yeliz.jpg"},
     {isim: "Yaren", resim:"media/yaren.webp"},
     {isim: "Aybüke", resim:"media/aybuke.webp"},
@@ -8,8 +8,26 @@ const result = [
     {isim: "Tuğçe", resim:"media/tugce.jpg"},
     {isim: "Elif", resim:"media/elif.jpg"},
     {isim: "Simge", resim:"media/sımge.webp"}
-
 ]
+const harryimg = [
+    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
+    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
+    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
+    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
+    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
+    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"}
+]
+
+
+const askimemnuimg = [
+    {isim: "kıvançabem5434", resim:"media/elif.jpg"},
+    {isim: "behlül kaçar", resim:"media/elif.jpg"},
+    {isim: "beni beni bihterini", resim:"media/elif.jpg"},
+    {isim: "nihal", resim:"media/elif.jpg"},
+    {isim: "bayıl birde feriha", resim:"media/elif.jpg"},
+    {isim: "suriyeli ahmet", resim:"media/elif.jpg"}
+]
+
 const container = document.getElementById("question-container");
 const background = document.querySelector(".background-filter");
 const kismet = document.getElementById("kismet");
@@ -25,23 +43,28 @@ const finishBtn = document.createElement("button");
 const submitButton = document.querySelector(".submit");
 
 let nextQuestion = 0;
+let data;
+let answ;
 kismet.addEventListener('click', () => {
     container.classList.remove('d-none');
     background.classList.remove('d-none');
+    data = kismetseolur;
+    answ = kismetseolurimg;
     loadTest(0);
-    console.log(kismet.getAttribute("data-name"));
 })
 aski.addEventListener('click', () => {
     container.classList.remove('d-none');
     background.classList.remove('d-none');
+    data = askimemnu;
+    answ = askimemnuimg;
     loadTest(0);
-    console.log(aski.getAttribute("data-name"));
 })
 harryPotter.addEventListener('click', () => {
     container.classList.remove('d-none');
     background.classList.remove('d-none');
+    data = harry;
+    answ = harryimg;
     loadTest(0);
-    console.log(harryPotter.getAttribute("data-name"));
 })
 
 
@@ -78,11 +101,11 @@ submitButton.addEventListener('click', () => {
         finishContainer.appendChild(finish);
         finishContainer.appendChild(finishtest);
         finishContainer.appendChild(finishBtn);
-        let random = Math.floor(Math.random() * result.length + 1);
-        finish.innerHTML = result[random].isim;
+        let random = Math.floor(Math.random() * answ.length + 1);
+        finish.innerHTML = answ[random].isim;
         finishtest.classList.add("finish-test");
         finishtest.innerHTML = "hellö";
-        finishImg.src = result[random].resim;
+        finishImg.src = answ[random].resim;
         container.appendChild(finishContainer);
     }
     /* herbir elemanın (inputun içindeki class adı .answer)
@@ -92,9 +115,9 @@ submitButton.addEventListener('click', () => {
 })
 
     closeButton.addEventListener('click', () => {
+        nextQuestion = 0;
         container.classList.add('d-none');
         background.classList.add('d-none');
-        nextQuestion = 0;
     })
 
     finishBtn.addEventListener('click', () => {
