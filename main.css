@@ -12,7 +12,8 @@
     padding:0;
     outline:none;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    
 }
 
 html,body {
@@ -98,9 +99,7 @@ body {
     list-style:none;
     flex: 1;
 }
-.navbar .icon li:hover {
 
-}
 .navbar .icon li img{
     width: 80px;
     height: 80px;    
@@ -182,44 +181,39 @@ body {
     align-items: center;
 }
 .question-container ul li {
-    color: #fff;
+    color: rgb(83, 81, 81);
     font-size: 1.5rem;
-    border: 2px solid rgba(243,139,42,255);
-    background-color: rgba(255,223,108,255);
+    border: 1px solid rgba(233,182,155,1);
     display: flex;
     margin-bottom: 10px;
-    border-radius:15px;
+    border-radius:5px;
     width: 70%;
 }
 .question-container ul li label {
     display: block;
     width: 100%;
     padding: 8px;
-    border-radius:15px;
+    border-radius:5px;
     cursor: pointer;  
 }
 
 .question-container ul li:hover {
     cursor: pointer;
-    background-color:  rgba(243,139,42,255);
+    box-shadow: 0px 0px 16px -5px rgba(233,182,155,1);
     transition: ease-out 300ms;
 }
 input:checked + label{
-    background-color:  rgba(243,139,42,255);
+    border: 2px solid rgba(233,182,155,1);
     width: 100%;
     
 }
 
-
 .question {
     padding:5px 10px;
-    color: rgba(243,139,42,255);
+    color:  rgb(83, 81, 81);
     font-size: 2rem;
     text-align: center;
-    margin: 0px 0px 40px 0px;
-    
-    
-    
+    margin: 0px 0px 40px 0px;   
 }
 .next-btn-container {
     margin-top: 10px;
@@ -228,21 +222,20 @@ input:checked + label{
 }
 .submit {
     font-size: 1.3rem;
-    color: white;
     width: 10%;
     padding: 8px;
     cursor: pointer;
-    border-radius:15px;
+    border-radius: 5px;
     position: absolute;
     right: 216px;
-    border: 2px solid rgba(243,139,42,255);
-    background-color: rgba(255,223,108,255);
+    background-color: white ;
     margin: 10px;
+    border: 1px solid rgba(233,182,155,1);
 
 }
 .submit:hover {
-    color:#fff;
-    background-color: rgba(243,139,42,255);
+    color: rgb(83, 81, 81);
+    box-shadow: 0px 0px 16px -5px rgba(233,182,155,1);
     
 }
 .answer{
