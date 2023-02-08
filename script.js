@@ -20,12 +20,13 @@ const harryimg = [
 
 
 const askimemnuimg = [
-    {isim: "kıvançabem5434", resim:"media/elif.jpg"},
-    {isim: "behlül kaçar", resim:"media/elif.jpg"},
-    {isim: "beni beni bihterini", resim:"media/elif.jpg"},
-    {isim: "nihal", resim:"media/elif.jpg"},
-    {isim: "bayıl birde feriha", resim:"media/elif.jpg"},
-    {isim: "suriyeli ahmet", resim:"media/elif.jpg"}
+    {isim: "Bihter", resim:"media/bıhter.webp"},
+    {isim: "Behlül", resim:"media/behlul.jpg"},
+    {isim: "Nihal", resim:"media/nıhal.jpg"},
+    {isim: "Adnan", resim:"media/adnan.webp"},
+    {isim: "Firdevs", resim:"media/fırdevs.jpg"},
+    {isim: "Beşir", resim:"media/beşır.jpg"},
+    {isim: "Cemile", resim:"media/cemıle.webp"}
 ]
 
 const container = document.getElementById("question-container");

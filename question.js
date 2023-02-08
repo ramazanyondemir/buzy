@@ -76,30 +76,57 @@ const kismetseolur = [
 
 const askimemnu = [
     {
-        soru: "askimemnu",
+        soru: "İlişkilerde konumunuz nedir?",
         cevaplar: {
-            a: "Hakkı Bulut",
-            b: "Lana Del Rey",
-            c: "Mabel Matiz",
-            d: "Linkin Park",
+            a: "Behlül ile Bihter'i gizli izleyen Beşir",
+            b: "Nihal gibi aptal aşık",
+            c: "Boynuzlanan Adnan",
+            d: "Körkütük Beşir'e aşık Cemile",
         }
     },
     {
-        soru: "atlar uçar mıqweqe?",
+        soru: "Aşkın yaşı var mı?",
         cevaplar: {
-            a: "cevap a",
-            b: "cevap b",
-            c: "cevap c",
-            d: "cevap d",
+            a: "Ne yaşı Sugar daddyleri bekliyorum",
+            b: "Yaş benim için sadece rakkam",
+            c: "Yaşa takıntılıyım",
+            d: "Çıtır olsun benim olsun",
         }
     },
     {
-        soru: "En Sevdiğin 45Müzisyen?",
+        soru: "Sen Adnan olsaydın Behlül ve Bihter'i öğrendiğinde tepkin ne olurdu?",
         cevaplar: {
-            a: "Sezen Aksu",
-            b: "İbrahim Tatlıses",
-            c: "Ahmet Kaya",
-            d: "Ferdi Tayfur",
+            a: "İkisinide öldürürdüm aksini düşünemiyorum",
+            b: "Öğrenmemiş gibi davranırdım",
+            c: "Büyü yapardım,",
+            d: "Ne yaşadıysam aynısını yaşatırım",
+        }
+    },
+    {
+        soru: "Aşk senin için neyi ifade ediyor??",
+        cevaplar: {
+            a: "Risk almayı,",
+            b: "Aşk ne ya yeniliyor mu?",
+            c: "Deliliktir",
+            d: "Anlatılmaz yaşanır",
+        }
+    },
+    {
+        soru: "Aşk için siz hangi fedakarlığı yapardınız? ",
+        cevaplar: {
+            a: "Bihter gibi kendimi öldürürdüm",
+            b: "Bihter'in annesine rağmen Adnan ile evlenmesi",
+            c: "Behlül'ün amcasına rağmen Bihter'le sevgili olması",
+            d: "Hiçbir şey",
+        }
+    },
+    {
+        soru: "Siz olsaydınız Aşk-ı Memnu dizisini nasıl bitirirdiniz?",
+        cevaplar: {
+            a: "Behlül'ü öldürerek",
+            b: "Behlül ile bihteri evlendirerek",
+            c: "Olması gerektiği gibi bitti",
+            d: "Adnan bütün mirasını dağıtarak Hindistana yerleşir.",
         }
     }
 ]

@@ -195,6 +195,7 @@ body {
     padding: 8px;
     border-radius:5px;
     cursor: pointer;  
+    background-color: rgb(255,231,186);
 }
 
 .question-container ul li:hover {
@@ -219,6 +220,7 @@ input:checked + label{
     margin-top: 10px;
     text-align: center;
     
+    
 }
 .submit {
     font-size: 1.3rem;
@@ -228,9 +230,9 @@ input:checked + label{
     border-radius: 5px;
     position: absolute;
     right: 216px;
-    background-color: white ;
     margin: 10px;
     border: 1px solid rgba(233,182,155,1);
+    background-color: rgb(255,231,186);
 
 }
 .submit:hover {
