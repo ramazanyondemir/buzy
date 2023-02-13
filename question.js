@@ -134,30 +134,58 @@ const askimemnu = [
 
 const harry = [
     {
-        soru: "harry potter",
+        soru: "Bir büyü olsan hangi büyü olurdun?",
         cevaplar: {
-            a: "Hakkı Bulut",
-            b: "Lana Del Rey",
-            c: "Mabel Matiz",
-            d: "Linkin Park",
+            a: "Expecto Patronum",
+            b: "Expelliarmus",
+            c: "Avada Kedavra",
+            d: "Wingardium leviosa",
         }
     },
     {
-        soru: "atlar uçar mıqweqe?",
+        soru: "Seçmen şapka seni nereye koyar?",
         cevaplar: {
-            a: "cevap a",
-            b: "cevap b",
-            c: "cevap c",
-            d: "cevap d",
+            a: "Gryffindor",
+            b: "Hufflepuff ",
+            c: "Ravenclaw",
+            d: "Slytherin",
         }
     },
     {
-        soru: "En Sevdiğin 45Müzisyen?",
+        soru: "Hangi Karabüyücüsün?",
         cevaplar: {
-            a: "Sezen Aksu",
-            b: "İbrahim Tatlıses",
-            c: "Ahmet Kaya",
-            d: "Ferdi Tayfur",
+            a: "Lord Voldemort",
+            b: "Bellatrix Lestrange",
+            c: "Lucius Malfoy ",
+            d: "Hiçbiri",
+        }
+    },
+    {
+        soru: "Sihir yapabildiğini öğrenseydin tepkin ne olurdu?",
+        cevaplar: {
+            a: "Bu seni hiç ilgilendirmez",
+            b: "İnanmazdım",
+            c: "Niye ben diye düşünürdüm",
+            d: "Neler yapabileceğimi düşünürdüm.",
+        }
+    },
+    {
+        soru: "Yks'de hangi üniversiteyi kazanmak isterdin?",
+        cevaplar: {
+            a: "Yıldız Teknik Üniversitesi",
+            b: "ODTÜ ",
+            c: "Boğaziçi Üniversitesi",
+            d: "Hogwarts",
+        }
+    },
+    {
+        soru: "Görünmezlik pelerini sende olsaydı ne yapardın?",
+        cevaplar: {
+            a: "Banka soyardım",
+            b: "onu izlerdim(aga be)",
+            c: "İnsanların telefon şifrelerini bakardım",
+            d: "Hiçbiri",
         }
     }
+    
 ]

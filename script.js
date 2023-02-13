@@ -10,12 +10,12 @@ const kismetseolurimg = [
     {isim: "Simge", resim:"media/sımge.webp"}
 ]
 const harryimg = [
-    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
-    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
-    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
-    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
-    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"},
-    {isim: "suriyeli ahmet", resim:"media/cansel.jpg"}
+    {isim: "Harry Potter", resim:"media/harrypotter.jpg"},
+    {isim: "Hermione Granger", resim:"media/hermione.jpg"},
+    {isim: "Ron Weasley", resim:"media/ron.jpg"},
+    {isim: "Snape Severus", resim:"media/snape.jpg"},
+    {isim: "Voldemort", resim:"media/voldemort.webp"},
+    {isim: "Albus Dumbledore", resim:"media/dumbledore1.webp"}
 ]
 
 
